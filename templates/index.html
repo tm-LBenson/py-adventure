@@ -3,6 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <title>Adventure Game</title>
+    <style>
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .container ul li a {
+        padding: 10px 15px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .container ul li a:hover {
+        background-color: #0056b3;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='styles.css') }}"
