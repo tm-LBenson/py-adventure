@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Adventure Game</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the Adventure Game!</h1>
+      <p>Begin your journey into a world of mystery and danger.</p>
+      <div>
+        <a href="{{ url_for('create_character') }}" class="button"
+          >Create New Character</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game Menu</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Game Menu</h1>
+      <p>
+        Welcome back, {{ character['User Name'] }} the {{ character['Race'] }}
+        {{ character['Class'] }}
+      </p>
+      <p>What would you like to do?</p>
+      <ul>
+        <li><a href="{{ url_for('view_character') }}">View Character</a></li>
+        <li><a href="{{ url_for('inventory') }}">Check Inventory</a></li>
+        <li><a href="{{ url_for('fight') }}">Fight Monster</a></li>
+        <li><a href="{{ url_for('heal') }}">Heal</a></li>
+        <li><a href="{{ url_for('buy') }}">Buy Something</a></li>
+        <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
